@@ -1,0 +1,111 @@
+body {
+	line-height: 1.5;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 18px;
+}
+
+.main {
+	/*
+	left: 3%;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	*/
+}
+
+@media screen and (min-width: 720px) {
+	body {
+		padding-left: 50%;
+	}
+
+	.main {
+		position: fixed;
+		right: 60%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+/*
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+*/
+
+.c-cv__section + .c-cv__section {
+	margin-top: 2rem;
+}
+
+.c-cv__entry + .c-cv__entry {
+	margin-top: 2.5rem;
+	position: relative;
+}
+
+.c-cv__section-title {
+	border-bottom: 2px solid black;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0 0 1em -4%;
+	padding: 1em 0 1em 4%;
+	position: relative;
+}
+
+.c-cv__section-title::before {
+	bottom: 0;
+	content: '//';
+	left: -1%;
+	line-height: 0;
+	position: absolute;
+	transform: translateX(-100%);
+}
+
+.c-cv__entry-title {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.c-cv__entry-main {
+	margin: .5em 0 0;
+	
+	position: relative;
+}
+
+.c-cv__accomplishments {
+	margin: 0;
+}
+
+
+
+
+
+
+.c-inline-list__title {
+	float: left;
+}
+
+.c-inline-list__title::after {
+	content: ':';
+	margin-right: .25em;
+}
+
+.c-inline-list__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.c-inline-list__item {
+	display: inline;
+}
+
+.c-inline-list__item + .c-inline-list__item::before {
+	content: ' / ';
+}
