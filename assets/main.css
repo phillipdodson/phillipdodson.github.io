@@ -7,6 +7,10 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+main {
+	margin-bottom: 40px;
+}
+
 @media screen and (min-width: 720px) {
 	body {
 		padding-left: 50%;
@@ -75,6 +79,12 @@ h3 {
 
 .c-cv__accomplishments {
 	margin: 0;
+}
+
+.c-cv__footer {
+	border-top: 2px solid #ccc;
+	margin-top: 1em;
+	padding-top: 1em;
 }
 
 
