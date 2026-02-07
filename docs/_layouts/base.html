@@ -14,7 +14,10 @@
 		<link rel="stylesheet" href="https://use.typekit.net/eji7ebz.css">
 		<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-		<script src="{{ '/assets/js/simple-password-gate.js' | relative_url }}" defer></script>
+		{% if page.require_password %}
+			<link rel="stylesheet" href="{{ '/assets/css/simple-password-gate.css' | relative_url }}">
+			<script src="{{ '/assets/js/simple-password-gate.js' | relative_url }}" defer></script>
+		{% endif %}
 
 		{%- if jekyll.environment == 'production' and site.tracking.google.gtm_container -%}
 			{% include gtm-head.html %}
