@@ -1,0 +1,16 @@
+<header class="site-header">
+	<a class="site-header__logolink" href="{{ site.url | escape }}">
+		<svg class="site-header__logo" width="113" height="153"><title>phillip dodson's icon</title><use href="{{ '/assets/images/phillipdodson-logo-v2.svg' | relative_url }}" /></svg>
+	</a>
+	
+	<nav class="site-navigation">
+		{% assign default_paths = site.pages | map: "path" %}
+		{% assign page_paths = site.navigation.header | default: default_paths %}
+		{% include navigation.html page_paths=page_paths %}
+	</nav>
+
+	<a class="site-header__cta c-button c-button--secondary" href="{{ site.calendly.pd_url | escape }}" target="_blank">
+		<svg class="c-button__icon" width="28" height="32"><use href="{{ '/assets/images/icons.svg#calendar' | relative_url }}" /></svg>
+		{{ site.calendly.pd_label_default | escape }}
+	</a>
+</header>

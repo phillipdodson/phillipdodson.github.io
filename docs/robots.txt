@@ -1,0 +1,7 @@
+---
+layout: null
+---
+User-agent: *
+Allow: /
+Disallow: /portfolio/
+Disallow: /case-study/

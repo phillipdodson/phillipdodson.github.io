@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<header class="portfolio-feed-header">
+	{{ content }}
+</header>
+
+<section class="portfolio-feed">
+    {% for case_study in site.case_studies %}
+		<article class="c-card">
+			<header class="c-card__header">
+				<h2 class="c-card__title"><a class="c-card__link" href="{{ case_study.url | escape }}">{{ case_study.title | escape }}</a></h2>
+				<img src="{{ '/assets/images/case-study/' | append: case_study.feed.image | relative_url }}" class="c-card__image" alt="">
+			</header>
+			<div class="c-card__body">{{ case_study.feed.label | escape }}</div>
+		</article>
+    {% endfor %}
+</section>

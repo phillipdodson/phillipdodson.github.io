@@ -1,0 +1,707 @@
+:root {
+  --wp--custom--primitives--border--width-1: 1px;
+  --wp--custom--primitives--border--width-2: 2px;
+  --wp--custom--primitives--border--width-3: 4px;
+  --wp--custom--primitives--border--width-4: 8px;
+  --wp--custom--primitives--color--brand-regal-blue: var(--wp--custom--primitives--color--regal-blue--900);
+  --wp--custom--primitives--color--brand-rose-taupe: var(--wp--custom--primitives--color--rose-taupe--600);
+  --wp--custom--primitives--color--brand-sand: var(--wp--custom--primitives--color--sand--400);
+  --wp--custom--primitives--color--brand-muesli: var(--wp--custom--primitives--color--muesli--400);
+  --wp--custom--primitives--color--brand-coral-reef: var(--wp--custom--primitives--color--coral-reef--300);
+  --wp--custom--primitives--color--black: #000000;
+  --wp--custom--primitives--color--white: #ffffff;
+  --wp--custom--primitives--color--regal-blue--50: #f0faff;
+  --wp--custom--primitives--color--regal-blue--100: #e0f4fe;
+  --wp--custom--primitives--color--regal-blue--200: #bbeafc;
+  --wp--custom--primitives--color--regal-blue--300: #7edafb;
+  --wp--custom--primitives--color--regal-blue--400: #3ac7f6;
+  --wp--custom--primitives--color--regal-blue--500: #10b0e7;
+  --wp--custom--primitives--color--regal-blue--600: #048ec5;
+  --wp--custom--primitives--color--regal-blue--700: #0472a0;
+  --wp--custom--primitives--color--regal-blue--800: #086084;
+  --wp--custom--primitives--color--regal-blue--900: #0c4a66;
+  --wp--custom--primitives--color--regal-blue--950: #093348;
+  --wp--custom--primitives--color--rose-taupe--50: #faf6f6;
+  --wp--custom--primitives--color--rose-taupe--100: #f4f0e6;
+  --wp--custom--primitives--color--rose-taupe--200: #ebe2e0;
+  --wp--custom--primitives--color--rose-taupe--300: #dacac7;
+  --wp--custom--primitives--color--rose-taupe--400: #c5aba7;
+  --wp--custom--primitives--color--rose-taupe--500: #ad8a86;
+  --wp--custom--primitives--color--rose-taupe--600: #886361;
+  --wp--custom--primitives--color--rose-taupe--700: #7b5655;
+  --wp--custom--primitives--color--rose-taupe--800: #68494a;
+  --wp--custom--primitives--color--rose-taupe--900: #5a4142;
+  --wp--custom--primitives--color--rose-taupe--950: #302121;
+  --wp--custom--primitives--color--sand--50: #f4f4f2;
+  --wp--custom--primitives--color--sand--100: #e4e4dd;
+  --wp--custom--primitives--color--sand--200: #cbcabd;
+  --wp--custom--primitives--color--sand--300: #aeaa96;
+  --wp--custom--primitives--color--sand--400: #9a947e;
+  --wp--custom--primitives--color--sand--500: #87806b;
+  --wp--custom--primitives--color--sand--600: #746b5a;
+  --wp--custom--primitives--color--sand--700: #5e564a;
+  --wp--custom--primitives--color--sand--800: #514a42;
+  --wp--custom--primitives--color--sand--900: #48413b;
+  --wp--custom--primitives--color--sand--950: #282320;
+  --wp--custom--primitives--color--muesli--50: #f8f5f2;
+  --wp--custom--primitives--color--muesli--100: #ebe2da;
+  --wp--custom--primitives--color--muesli--200: #d5c2b2;
+  --wp--custom--primitives--color--muesli--300: #bfa18a;
+  --wp--custom--primitives--color--muesli--400: #ad8369;
+  --wp--custom--primitives--color--muesli--500: #a4715c;
+  --wp--custom--primitives--color--muesli--600: #905c4f;
+  --wp--custom--primitives--color--muesli--700: #784a45;
+  --wp--custom--primitives--color--muesli--800: #643d3c;
+  --wp--custom--primitives--color--muesli--900: #533534;
+  --wp--custom--primitives--color--muesli--950: #2e1a1a;
+  --wp--custom--primitives--color--coral-reef--50: #f8f7f4;
+  --wp--custom--primitives--color--coral-reef--100: #efede5;
+  --wp--custom--primitives--color--coral-reef--200: #ded8ca;
+  --wp--custom--primitives--color--coral-reef--300: #c7bca5;
+  --wp--custom--primitives--color--coral-reef--400: #b2a085;
+  --wp--custom--primitives--color--coral-reef--500: #a38c6c;
+  --wp--custom--primitives--color--coral-reef--600: #967c60;
+  --wp--custom--primitives--color--coral-reef--700: #7d6551;
+  --wp--custom--primitives--color--coral-reef--800: #665346;
+  --wp--custom--primitives--color--coral-reef--900: #54453a;
+  --wp--custom--primitives--color--coral-reef--950: #2c231e;
+  --wp--custom--primitives--color--grey--50: #f7f8f8;
+  --wp--custom--primitives--color--grey--100: #eceeee;
+  --wp--custom--primitives--color--grey--200: #dfe1e2;
+  --wp--custom--primitives--color--grey--300: #c9cdcf;
+  --wp--custom--primitives--color--grey--400: #abb1b5;
+  --wp--custom--primitives--color--grey--500: #93999f;
+  --wp--custom--primitives--color--grey--600: #7a818a;
+  --wp--custom--primitives--color--grey--700: #63676e;
+  --wp--custom--primitives--color--grey--800: #505458;
+  --wp--custom--primitives--color--grey--900: #44474a;
+  --wp--custom--primitives--color--grey--950: #292b2e;
+  --wp--custom--primitives--fonts--trade-gothic-next-bold--font-family: trade-gothic-next, sans-serif;
+  --wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight: 700;
+  --wp--custom--primitives--fonts--trade-gothic-next-bold--font-style: normal;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular--font-family: brandon-grotesque, sans-serif;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular--font-weight: 400;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular--font-style: normal;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-family: brandon-grotesque, sans-serif;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-weight: 400;
+  --wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-style: italic;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold--font-family: brandon-grotesque, sans-serif;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold--font-weight: 700;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold--font-style: normal;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-family: brandon-grotesque, sans-serif;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-weight: 700;
+  --wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-style: italic;
+  --wp--custom--primitives--spacing--0: 0;
+  --wp--custom--primitives--spacing--0-5: 4;
+  --wp--custom--primitives--spacing--1: 8;
+  --wp--custom--primitives--spacing--1-5: 12;
+  --wp--custom--primitives--spacing--2: 16;
+  --wp--custom--primitives--spacing--3: 24;
+  --wp--custom--primitives--spacing--4: 32;
+  --wp--custom--primitives--spacing--5: 40;
+  --wp--custom--primitives--spacing--6: 56;
+  --wp--custom--primitives--spacing--8: 64;
+  --wp--custom--primitives--spacing--10: 80;
+  --wp--custom--primitives--spacing--12: 96;
+  --wp--custom--primitives--spacing--16: 128;
+  --wp--custom--primitives--spacing--20: 160;
+  --wp--custom--primitives--spacing--24: 192;
+  --wp--custom--semantic--border--width-xsm: var(--wp--custom--primitives--border--width-1);
+  --wp--custom--semantic--border--width-sm: var(--wp--custom--primitives--border--width-2);
+  --wp--custom--semantic--border--width-md: var(--wp--custom--primitives--border--width-4);
+  --wp--custom--semantic--border--width-lg: var(--wp--custom--primitives--border--width-8);
+  --wp--custom--semantic--border--radius-pill: 9999px;
+  --wp--custom--semantic--color--background-primary: var(--wp--custom--primitives--color--white);
+  --wp--custom--semantic--color--background-secondary: var(--wp--custom--primitives--color--regal-blue--900);
+  --wp--custom--semantic--color--background-tertiary: var(--wp--custom--primitives--color--coral-reef--300);
+  --wp--custom--semantic--color--background-alternate-1: var(--wp--custom--primitives--color--coral-reef--100);
+  --wp--custom--semantic--color--background-alternate-1-glass: #efede5fa;
+  --wp--custom--semantic--color--background-alternate-2: var(--wp--custom--primitives--color--regal-blue--950);
+  --wp--custom--semantic--color--background-alternate-2-glass: #093348f2;
+  --wp--custom--semantic--color--text-primary: var(--wp--custom--primitives--color--black);
+  --wp--custom--semantic--color--text-secondary: var(--wp--custom--primitives--color--regal-blue--900);
+  --wp--custom--semantic--color--text-tertiary: var(--wp--custom--primitives--color--rose-taupe--600);
+  --wp--custom--semantic--color--text-alternate-1: var(--wp--custom--primitives--color--white);
+  --wp--custom--semantic--color--text-alternate-2: var(--wp--custom--primitives--color--coral-reef--300);
+  --wp--custom--semantic--dimensions--min-hit: 44px;
+  --wp--custom--semantic--link--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--semantic--link--color--text-active: var(--wp--custom--primitives--color--rose-taupe--900);
+  --wp--custom--semantic--link--color--text-focus: var(--wp--custom--semantic--color--text-tertiary);
+  --wp--custom--semantic--link--color--text-hover: var(--wp--custom--semantic--color--text-tertiary);
+  --wp--custom--semantic--spacing--xxsm: calc(var(--wp--custom--primitives--spacing--0-5) * 1px);
+  --wp--custom--semantic--spacing--xsm: calc(var(--wp--custom--primitives--spacing--1-5) * 1px);
+  --wp--custom--semantic--spacing--sm: calc(var(--wp--custom--primitives--spacing--2) * 1px);
+  --wp--custom--semantic--spacing--md: calc(var(--wp--custom--primitives--spacing--3) * 1px);
+  --wp--custom--semantic--spacing--lg: calc(var(--wp--custom--primitives--spacing--4) * 1px);
+  --wp--custom--semantic--spacing--xlg: calc(var(--wp--custom--primitives--spacing--8) * 1px);
+  --wp--custom--semantic--spacing--xxlg: calc(var(--wp--custom--primitives--spacing--12) * 1px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--20: clamp(4.25px, 3.9891px + 0.0815vw, 5px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--30: clamp(7.5px, 6.6304px + 0.2717vw, 10px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--40: clamp(12px, 9.2174px + 0.8696vw, 20px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--50: clamp(24px, 21.514px + 0.663vw, 30px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--55: clamp(32px, 24.127px + 2.099vw, 51px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--60: clamp(40px, 26.74px + 3.536vw, 72px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--70: clamp(55.4px, 22.975px + 7.58vw, 120px);
+  --wp--custom--semantic--spacing--fluid-viewport-px--80: clamp(74px, 35.05px + 10.387vw, 168px);
+  --wp--custom--semantic--typography--default--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-family);
+  --wp--custom--semantic--typography--default--font-size: 1.25rem;
+  --wp--custom--semantic--typography--default--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-style);
+  --wp--custom--semantic--typography--default--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-weight);
+  --wp--custom--semantic--typography--default--line-height: 1.5;
+  --wp--custom--semantic--typography--default-bold--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-bold--font-family);
+  --wp--custom--semantic--typography--default-bold--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--semantic--typography--default-bold--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-bold--font-style);
+  --wp--custom--semantic--typography--default-bold--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-bold--font-weight);
+  --wp--custom--semantic--typography--default-bold--line-height: var(--wp--custom--semantic--typography--default--line-height);
+  --wp--custom--semantic--typography--default-italic--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-italic--font-family);
+  --wp--custom--semantic--typography--default-italic--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--semantic--typography--default-italic--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-italic--font-style);
+  --wp--custom--semantic--typography--default-italic--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-italic--font-weight);
+  --wp--custom--semantic--typography--default-italic--line-height: var(--wp--custom--semantic--typography--default--line-height);
+  --wp--custom--semantic--typography--default-bold-italic--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-family);
+  --wp--custom--semantic--typography--default-bold-italic--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--semantic--typography--default-bold-italic--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-style);
+  --wp--custom--semantic--typography--default-bold-italic--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-bold-italic--font-weight);
+  --wp--custom--semantic--typography--default-bold-italic--line-height: var(--wp--custom--semantic--typography--default--line-height);
+  --wp--custom--semantic--typography--body-medium--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-family);
+  --wp--custom--semantic--typography--body-medium--font-size: clamp(1.25rem, 1.146rem + 0.442vw, 1.5rem);
+  --wp--custom--semantic--typography--body-medium--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-style);
+  --wp--custom--semantic--typography--body-medium--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-weight);
+  --wp--custom--semantic--typography--body-medium--line-height: 1.4;
+  --wp--custom--semantic--typography--body-large--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-family);
+  --wp--custom--semantic--typography--body-large--font-size: clamp(1.5rem, 1.293rem + 0.884vw, 2rem);
+  --wp--custom--semantic--typography--body-large--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-style);
+  --wp--custom--semantic--typography--body-large--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-weight);
+  --wp--custom--semantic--typography--body-large--line-height: 1.3;
+  --wp--custom--semantic--typography--body-small--font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-family);
+  --wp--custom--semantic--typography--body-small--font-size: 1rem;
+  --wp--custom--semantic--typography--body-small--font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-style);
+  --wp--custom--semantic--typography--body-small--font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-regular--font-weight);
+  --wp--custom--semantic--typography--body-small--line-height: 1.5;
+  --wp--custom--semantic--typography--display-1--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--display-1--font-size: clamp(2.25rem, 0.862rem + 5.923vw, 5.6rem);
+  --wp--custom--semantic--typography--display-1--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--display-1--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--display-1--line-height: 1.05;
+  --wp--custom--semantic--typography--display-2--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--display-2--font-size: clamp(2rem, 0.757rem + 5.304vw, 5rem);
+  --wp--custom--semantic--typography--display-2--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--display-2--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--display-2--line-height: 1.07;
+  --wp--custom--semantic--typography--display-3--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--display-3--font-size: clamp(1.75rem, 0.818rem + 3.978vw, 4rem);
+  --wp--custom--semantic--typography--display-3--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--display-3--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--display-3--line-height: 1.1;
+  --wp--custom--semantic--typography--heading-1--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-1--font-size: clamp(1.875rem, 0.71rem + 4.972vw, 4.688rem);
+  --wp--custom--semantic--typography--heading-1--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-1--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-1--line-height: 1.1;
+  --wp--custom--semantic--typography--heading-2--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-2--font-size: clamp(1.75rem, 1.491rem + 1.105vw, 2.375rem);
+  --wp--custom--semantic--typography--heading-2--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-2--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-2--line-height: 1.1;
+  --wp--custom--semantic--typography--heading-3--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-3--font-size: clamp(1.625rem, 1.47rem + 0.663vw, 2rem);
+  --wp--custom--semantic--typography--heading-3--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-3--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-3--line-height: 1.2;
+  --wp--custom--semantic--typography--heading-4--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-4--font-size: clamp(1.5rem, 1.396rem + 0.442vw, 1.75rem);
+  --wp--custom--semantic--typography--heading-4--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-4--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-4--line-height: 1.3;
+  --wp--custom--semantic--typography--heading-5--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-5--font-size: clamp(1.25rem, 1.146rem + 0.442vw, 1.5rem);
+  --wp--custom--semantic--typography--heading-5--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-5--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-5--line-height: 1.35;
+  --wp--custom--semantic--typography--heading-6--font-family: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-family);
+  --wp--custom--semantic--typography--heading-6--font-size: clamp(1.125rem, 1.073rem + 0.221vw, 1.25rem);
+  --wp--custom--semantic--typography--heading-6--font-style: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-style);
+  --wp--custom--semantic--typography--heading-6--font-weight: var(--wp--custom--primitives--fonts--trade-gothic-next-bold--font-weight);
+  --wp--custom--semantic--typography--heading-6--line-height: 1.40;
+  --wp--custom--component--button--primary-medium--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-medium--border--style: solid;
+  --wp--custom--component--button--primary-medium--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--primary-medium--border--radius: var(--wp--custom--semantic--border--radius-pill);
+  --wp--custom--component--button--primary-medium--color--background: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-medium--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-medium--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--primary-medium--shadow: var(--wp--preset--shadow--coral-reef);
+  --wp--custom--component--button--primary-medium--spacing--padding--top: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--primary-medium--spacing--padding--right: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--primary-medium--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--primary-medium--spacing--padding--left: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--primary-medium--typography--line-height: 1.25;
+  --wp--custom--component--button--primary-medium--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--primary-medium--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--primary-medium--typography--text-decoration: none;
+  --wp--custom--component--button--primary-medium--focus--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-medium--focus--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--primary-medium--focus--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-medium--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--primary-medium--hover--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-medium--hover--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--primary-medium--hover--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-medium--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--primary-medium--active--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-medium--active--color--background: var(--wp--custom--primitives--color--regal-blue--950);
+  --wp--custom--component--button--primary-medium--active--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-medium--active--typography--text-decoration: underline;
+  --wp--custom--component--button--primary-small--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-small--border--style: solid;
+  --wp--custom--component--button--primary-small--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--primary-small--border--radius: var(--wp--custom--semantic--border--radius-pill);
+  --wp--custom--component--button--primary-small--color--background: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-small--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-small--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--primary-small--shadow: var(--wp--preset--shadow--coral-reef);
+  --wp--custom--component--button--primary-small--spacing--padding--top: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--primary-small--spacing--padding--right: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--primary-small--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--primary-small--spacing--padding--left: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--primary-small--typography--line-height: 1.25;
+  --wp--custom--component--button--primary-small--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--primary-small--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--primary-small--typography--text-decoration: none;
+  --wp--custom--component--button--primary-small--focus--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-small--focus--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--primary-small--focus--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-small--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--primary-small--hover--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-small--hover--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--primary-small--hover--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-small--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--primary-small--active--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--primary-small--active--color--background: var(--wp--custom--primitives--color--regal-blue--950);
+  --wp--custom--component--button--primary-small--active--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--primary-small--active--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-medium--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-medium--border--style: solid;
+  --wp--custom--component--button--secondary-medium--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--secondary-medium--border--radius: var(--wp--custom--semantic--border--radius-pill);
+  --wp--custom--component--button--secondary-medium--color--background: var(--wp--custom--semantic--color--background-primary);
+  --wp--custom--component--button--secondary-medium--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--secondary-medium--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--secondary-medium--shadow: var(--wp--preset--shadow--coral-reef);
+  --wp--custom--component--button--secondary-medium--spacing--padding--top: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--secondary-medium--spacing--padding--right: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--secondary-medium--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--secondary-medium--spacing--padding--left: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--secondary-medium--typography--line-height: 1.25;
+  --wp--custom--component--button--secondary-medium--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--secondary-medium--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--secondary-medium--typography--text-decoration: none;
+  --wp--custom--component--button--secondary-medium--focus--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-medium--focus--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--secondary-medium--focus--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-medium--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-medium--hover--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-medium--hover--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--secondary-medium--hover--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-medium--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-medium--active--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-medium--active--color--background: var(--wp--custom--primitives--color--regal-blue--950);
+  --wp--custom--component--button--secondary-medium--active--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-medium--active--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-small--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-small--border--style: solid;
+  --wp--custom--component--button--secondary-small--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--secondary-small--border--radius: var(--wp--custom--semantic--border--radius-pill);
+  --wp--custom--component--button--secondary-small--color--background: var(--wp--custom--semantic--color--background-primary);
+  --wp--custom--component--button--secondary-small--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--secondary-small--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--secondary-small--shadow: var(--wp--preset--shadow--coral-reef);
+  --wp--custom--component--button--secondary-small--spacing--padding--top: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--secondary-small--spacing--padding--right: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--secondary-small--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--secondary-small--spacing--padding--left: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--secondary-small--typography--line-height: 1.25;
+  --wp--custom--component--button--secondary-small--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--secondary-small--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--secondary-small--typography--text-decoration: none;
+  --wp--custom--component--button--secondary-small--focus--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-small--focus--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--secondary-small--focus--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-small--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-small--hover--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-small--hover--color--background: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--button--secondary-small--hover--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-small--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--secondary-small--active--border--color: var(--wp--custom--primitives--color--brand-regal-blue);
+  --wp--custom--component--button--secondary-small--active--color--background: var(--wp--custom--primitives--color--regal-blue--950);
+  --wp--custom--component--button--secondary-small--active--color--text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--button--secondary-small--active--typography--text-decoration: underline;
+  --wp--custom--component--button--tertiary-medium--border--color: transparent;
+  --wp--custom--component--button--tertiary-medium--border--style: solid;
+  --wp--custom--component--button--tertiary-medium--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--tertiary-medium--border--radius: 0;
+  --wp--custom--component--button--tertiary-medium--color--background: transparent;
+  --wp--custom--component--button--tertiary-medium--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-medium--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--tertiary-medium--shadow: none;
+  --wp--custom--component--button--tertiary-medium--spacing--padding--top: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--tertiary-medium--spacing--padding--right: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--tertiary-medium--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--button--tertiary-medium--spacing--padding--left: var(--wp--custom--semantic--spacing--md);
+  --wp--custom--component--button--tertiary-medium--typography--line-height: 1.25;
+  --wp--custom--component--button--tertiary-medium--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--tertiary-medium--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--tertiary-medium--typography--text-decoration: none;
+  --wp--custom--component--button--tertiary-medium--focus--border--color: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-medium--focus--border--radius: 0;
+  --wp--custom--component--button--tertiary-medium--focus--color--background: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-medium--focus--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-medium--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--tertiary-medium--hover--border--color: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-medium--hover--border--radius: 0;
+  --wp--custom--component--button--tertiary-medium--hover--color--background: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-medium--hover--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-medium--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--tertiary-medium--active--border--color: var(--wp--custom--semantic--color--background-tertiary);
+  --wp--custom--component--button--tertiary-medium--active--border--radius: 0;
+  --wp--custom--component--button--tertiary-medium--active--color--background: var(--wp--custom--semantic--color--background-tertiary);
+  --wp--custom--component--button--tertiary-medium--active--color--text: var(--wp--custom--semantic--color--text-primary);
+  --wp--custom--component--button--tertiary-medium--active--typography--text-decoration: none;
+  --wp--custom--component--button--tertiary-small--border--color: transparent;
+  --wp--custom--component--button--tertiary-small--border--style: solid;
+  --wp--custom--component--button--tertiary-small--border--width: var(--wp--custom--semantic--border--width-sm);
+  --wp--custom--component--button--tertiary-small--border--radius: 0;
+  --wp--custom--component--button--tertiary-small--color--background: transparent;
+  --wp--custom--component--button--tertiary-small--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-small--dimensions--min-height: var(--wp--custom--semantic--dimensions--min-hit);
+  --wp--custom--component--button--tertiary-small--shadow: none;
+  --wp--custom--component--button--tertiary-small--spacing--padding--top: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--tertiary-small--spacing--padding--right: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--tertiary-small--spacing--padding--bottom: var(--wp--custom--semantic--spacing--xxsm);
+  --wp--custom--component--button--tertiary-small--spacing--padding--left: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--button--tertiary-small--typography--line-height: 1.25;
+  --wp--custom--component--button--tertiary-small--typography--font-family: var(--wp--custom--semantic--typography--default--font-family);
+  --wp--custom--component--button--tertiary-small--typography--font-size: var(--wp--custom--semantic--typography--default--font-size);
+  --wp--custom--component--button--tertiary-small--typography--text-decoration: none;
+  --wp--custom--component--button--tertiary-small--focus--border--color: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-small--focus--border--radius: 0;
+  --wp--custom--component--button--tertiary-small--focus--color--background: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-small--focus--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-small--focus--typography--text-decoration: underline;
+  --wp--custom--component--button--tertiary-small--hover--border--color: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-small--hover--border--radius: 0;
+  --wp--custom--component--button--tertiary-small--hover--color--background: var(--wp--custom--semantic--color--background-alternate-1);
+  --wp--custom--component--button--tertiary-small--hover--color--text: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--button--tertiary-small--hover--typography--text-decoration: underline;
+  --wp--custom--component--button--tertiary-small--active--border--color: var(--wp--custom--semantic--color--background-tertiary);
+  --wp--custom--component--button--tertiary-small--active--border--radius: 0;
+  --wp--custom--component--button--tertiary-small--active--color--background: var(--wp--custom--semantic--color--background-tertiary);
+  --wp--custom--component--button--tertiary-small--active--color--text: var(--wp--custom--semantic--color--text-primary);
+  --wp--custom--component--button--tertiary-small--active--typography--text-decoration: none;
+  --wp--custom--component--button--text-underline-offset: 0.3rem;
+  --wp--custom--component--sitenav--background-blur: 6px;
+  --wp--custom--component--sitenav--text-line-height: 1.25;
+  --wp--custom--component--sitenav--padding-top: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--sitenav--padding-right: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--sitenav--padding-bottom: var(--wp--custom--semantic--spacing--xsm);
+  --wp--custom--component--sitenav--padding-left: var(--wp--custom--semantic--spacing--sm);
+  --wp--custom--component--sitenav--default-color-text: var(--wp--custom--semantic--color--text-primary);
+  --wp--custom--component--sitenav--default-color-text-focus: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--sitenav--default-color-text-hover: var(--wp--custom--semantic--color--text-secondary);
+  --wp--custom--component--sitenav--default-color-text-active: var(--wp--custom--primitive--color--regal-blue--950);
+  --wp--custom--component--sitenav--default-color-background: var(--wp--custom--semantic--color--background-alternate-1-glass);
+  --wp--custom--component--sitenav--default-color-background-focus: var(--wp--custom--primitives--color--coral-reef--50);
+  --wp--custom--component--sitenav--default-color-background-hover: var(--wp--custom--primitives--color--coral-reef--50);
+  --wp--custom--component--sitenav--default-color-background-active: var(--wp--custom--primitives--color--coral-reef--200);
+  --wp--custom--component--sitenav--dark-color-text: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--sitenav--dark-color-text-focus: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--sitenav--dark-color-text-hover: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--sitenav--dark-color-text-active: var(--wp--custom--semantic--color--text-alternate-1);
+  --wp--custom--component--sitenav--dark-color-background: var(--wp--custom--semantic--color--background-alternate-2-glass);
+  --wp--custom--component--sitenav--dark-color-background-focus: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--sitenav--dark-color-background-hover: var(--wp--custom--primitives--color--regal-blue--800);
+  --wp--custom--component--sitenav--dark-color-background-active: var(--wp--custom--semantic--color--text-secondary);
+
+  --wp--style--global--content-size: 40.5rem;
+  --wp--style--global--wide-size: 70.25rem;
+  --wp--style--root--padding-top: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+  --wp--style--root--padding-right: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+  --wp--style--root--padding-bottom: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+  --wp--style--root--padding-left: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+  --wp--preset--shadow--coral-reef: 2px 2px 0 var(--wp--custom--primitives--color--brand-coral-reef);
+  --wp--style--block-gap: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid purple !important;
+}
+
+* {
+  text-underline-offset: .3rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+
+/**
+ * Inputs.
+ */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
+  background-color: var(--wp--custom--semantic--color--background-primary);
+  border-color: var(--wp--custom--component--button--primary-medium--border--color);
+  border-radius: 4px;
+  border-style: var(--wp--custom--component--button--primary-medium--border--style);
+  border-width: var(--wp--custom--component--button--primary-medium--border--width);
+  box-shadow: inset 2px 2px 0 var(--wp--custom--primitives--color--brand-coral-reef);
+  color: var(--wp--custom--semantic--color--text-primary);
+  font-family: var(--wp--custom--component--button--primary-medium--typography--font-family);
+  font-size: var(--wp--custom--component--button--primary-medium--typography--font-size);
+  line-height: var(--wp--custom--component--button--primary-medium--typography--line-height);
+  min-height: var(--wp--custom--component--button--primary-medium--dimensions--min-height);
+  padding-bottom: var(--wp--custom--component--button--primary-medium--spacing--padding--bottom);
+  padding-left: var(--wp--custom--semantic--spacing--xsm);
+  padding-right: var(--wp--custom--semantic--spacing--xsm);
+  padding-top: var(--wp--custom--component--button--primary-medium--spacing--padding--top);
+  text-decoration: var(--wp--custom--component--button--primary-medium--typography--text-decoration);
+}
+
+/**
+ * Links.
+ */
+a:where(:not(.c-button)) {
+  color: var(--wp--custom--semantic--link--color--text);
+  text-decoration: underline;
+}
+
+a:where(:not(.c-button)):hover {
+  color: var(--wp--custom--semantic--link--color--text-hover);
+  text-decoration: none;
+}
+
+a:where(:not(.c-button)):focus {
+  color: var(--wp--custom--semantic--link--color--text-focus);
+  text-decoration: none;
+}
+
+a:where(:not(.c-button)):active {
+  color: var(--wp--custom--semantic--link--color--text-active);
+  text-decoration: underline;
+}
+
+/**
+ * Typography.
+ */
+body {
+  font-family: var(--wp--custom--semantic--typography--default--font-family);
+  font-size: var(--wp--custom--semantic--typography--default--font-size);
+  font-style: var(--wp--custom--semantic--typography--default--font-style);
+  font-weight: var(--wp--custom--semantic--typography--default--font-weight);
+  line-height: var(--wp--custom--semantic--typography--default--line-height);
+}
+
+h1,
+.h1 {
+  font-family: var(--wp--custom--semantic--typography--heading-1--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-1--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-1--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-1--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-1--line-height);
+}
+
+h2,
+.h2 {
+  font-family: var(--wp--custom--semantic--typography--heading-2--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-2--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-2--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-2--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-2--line-height);
+}
+
+h3,
+.h3 {
+  font-family: var(--wp--custom--semantic--typography--heading-3--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-3--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-3--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-3--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-3--line-height);
+}
+
+h4,
+.h4 {
+  font-family: var(--wp--custom--semantic--typography--heading-4--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-4--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-4--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-4--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-4--line-height);
+}
+
+h5,
+.h5 {
+  font-family: var(--wp--custom--semantic--typography--heading-5--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-5--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-5--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-5--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-5--line-height);
+}
+
+h6,
+.h6 {
+  font-family: var(--wp--custom--semantic--typography--heading-6--font-family);
+  font-size: var(--wp--custom--semantic--typography--heading-6--font-size);
+  font-style: var(--wp--custom--semantic--typography--heading-6--font-style);
+  font-weight: var(--wp--custom--semantic--typography--heading-6--font-weight);
+  line-height: var(--wp--custom--semantic--typography--heading-6--line-height);
+}
+
+.display-1 {
+  font-family: var(--wp--custom--semantic--typography--display-1--font-family);
+  font-size: var(--wp--custom--semantic--typography--display-1--font-size);
+  font-style: var(--wp--custom--semantic--typography--display-1--font-style);
+  font-weight: var(--wp--custom--semantic--typography--display-1--font-weight);
+  line-height: var(--wp--custom--semantic--typography--display-1--line-height);
+}
+
+.display-2 {
+  font-family: var(--wp--custom--semantic--typography--display-2--font-family);
+  font-size: var(--wp--custom--semantic--typography--display-2--font-size);
+  font-style: var(--wp--custom--semantic--typography--display-2--font-style);
+  font-weight: var(--wp--custom--semantic--typography--display-2--font-weight);
+  line-height: var(--wp--custom--semantic--typography--display-2--line-height);
+}
+
+.display-3 {
+  font-family: var(--wp--custom--semantic--typography--display-3--font-family);
+  font-size: var(--wp--custom--semantic--typography--display-3--font-size);
+  font-style: var(--wp--custom--semantic--typography--display-3--font-style);
+  font-weight: var(--wp--custom--semantic--typography--display-3--font-weight);
+  line-height: var(--wp--custom--semantic--typography--display-3--line-height);
+}
+
+.caption {
+  font-family: var(--wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-family);
+  font-weight: var(--wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-weight);
+  font-style: var(--wp--custom--primitives--fonts--brandon-grotesque-regular-italic--font-style);
+  text-align: center;
+}
+
+/**
+ * Site header.
+ */
+.site-header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--wp--style--root--padding-top) var(--wp--style--root--padding-right) var(--wp--style--root--padding-bottom) var(--wp--style--root--padding-left);
+}
+
+.site-header__logolink {
+  color: var(--wp--custom--semantic--link--color--text);
+}
+
+.site-header__logo {
+  fill: currentColor;
+  filter: drop-shadow(var(--wp--custom--component--button--secondary-medium--shadow));
+  height: auto;
+  max-width: 51px;
+}
+
+.site-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wp--style--block-gap);
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-navigation a {
+  text-decoration: none;
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover {
+  text-decoration: underline;
+}
+
+.site-navigation a:active {
+  text-decoration: none;
+}
+
+/**
+ * Site footer.
+ */
+.site-footer {
+  column-gap: var(--wp--style--block-gap);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: var(--wp--custom--semantic--spacing--fluid-viewport-px--50);
+  padding-left: var(--wp--style--root--padding-left);
+  padding-right: var(--wp--style--root--padding-right);
+}
+
+.site-footer::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(140deg, #0C4A66 0%, #886361);
+  display: block;
+  margin-bottom: var(--wp--custom--semantic--spacing--fluid-viewport-px--50)
+}
+
+.footer-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wp--style--block-gap);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.footer-navigation a {
+  text-decoration: none;
+}
+
+.footer-navigation a:focus,
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  text-decoration: none;
+}
+
+.site-copyright {
+  margin: 0;
+}
+
+/**
+ * CTA.
+ */
+.cta {
+  margin-bottom: var(--wp--custom--semantic--spacing--fluid-viewport-px--70);
+  margin-top: var(--wp--custom--semantic--spacing--fluid-viewport-px--70);
+  padding-right: var(--wp--style--root--padding-right);
+  padding-left: var(--wp--style--root--padding-left);
+  text-align: center;
+}
+
+.cta-headline {
+  color: var(--wp--custom--semantic--color--text-secondary);
+}

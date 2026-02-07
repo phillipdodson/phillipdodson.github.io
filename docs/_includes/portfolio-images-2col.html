@@ -1,0 +1,21 @@
+{% if include.data.images %}
+<section class="portfolio-images-2col-wrap">
+{% for image in include.data.images %}
+	<figure class="portfolio-images-2col">
+		<img 
+			decoding="async" 
+			src="{{ '/assets/images/case-study/' | append: image.filename | relative_url }}" 
+			alt="{{ image.alt | escape }}"
+			class="portfolio-images-2col-image"
+			width="{{ image.width | escape }}"
+			height="{{ image.height | escape }}">
+		
+		{% if image.caption %}
+		<figcaption class="portfolio-images-2col-caption caption">
+			{{ image.caption | escape }}
+		</figcaption>
+		{% endif %}
+	</figure>
+{% endfor %}
+</section>
+{% endif %}

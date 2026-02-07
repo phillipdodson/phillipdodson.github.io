@@ -1,0 +1,10 @@
+{% if include.data.content %}
+<div class="portfolio-callout">
+	<div class="portfolio-callout-headline-wrap">
+		<h2 class="portfolio-callout-headline">{{ include.data.heading | escape }}</h2>
+	</div>
+	<div class="portfolio-callout-content-wrap">
+		{{ include.data.content }}
+	</div>
+</div>
+{% endif %}
