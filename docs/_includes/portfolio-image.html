@@ -1,0 +1,17 @@
+{% if include.data.filename %}
+<figure class="portfolio-image">
+	<img 
+		decoding="async" 
+		src="{{ '/assets/images/case-study/' | append: include.data.filename | relative_url }}" 
+		alt="{{ include.data.alt | escape }}"
+		class="portfolio-image-image"
+		width="{{ include.data.width | escape }}"
+		height="{{ include.data.height | escape }}">
+	
+	{% if include.data.caption %}
+	<figcaption class="portfolio-image-caption caption">
+		{{ include.data.caption | escape }}
+	</figcaption>
+	{% endif %}
+</figure>
+{% endif %}

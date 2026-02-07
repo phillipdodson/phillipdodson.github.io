@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Portfolio
+require_password: true
 permalink: /portfolio/
 ---
 

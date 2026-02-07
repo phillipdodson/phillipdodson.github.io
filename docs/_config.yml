@@ -32,6 +32,11 @@ url: "phillipdodson.github.io" # the base hostname & protocol for your site, e.g
 plugins:
   - jekyll-feed
 
+collections:
+  case_studies:
+    output: true
+    permalink: /case-study/:name
+
 calendly:
   pd_url: https://calendly.com/phillipdodson/30min
   pd_label_default: Book a call

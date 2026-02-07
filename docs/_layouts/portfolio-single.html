@@ -1,0 +1,50 @@
+---
+layout: base
+---
+
+<article class="portfolio">
+	<header class="portfolio-header" style="background: linear-gradient({{ page.hero.gradient_angle | escape }}, {{ page.hero.gradient_c1 | escape }} 0%, {{ page.hero.gradient_c2 | escape }});">
+		<div class="portfolio-title-wrap">
+			<h1 class="portfolio-title">{{ page.title }}</h1>
+		</div>
+		<div class="portfolio-meta-wrap">
+			<p class="portfolio-client">{{ page.client | escape }}</div>
+		</div>
+		<div class="portfolio-featured-image">
+			<div class="portfolio-featured-image-mask">
+				<div class="portfolio-featured-image-spacer">
+					<img src="{{ '/assets/images/case-study/' | append: page.hero.image_file | relative_url }}" class="portfolio-featured-image-image" alt="" decoding="async" fetchpriority="high">
+				</div>
+			</div>
+		</div>
+		<div class="c-separator-pattern">
+			<div class="c-separator-pattern__bar">
+				<div class="c-separator-pattern__pattern" style="background-image: url('{{ "/assets/images/pattern-svg-inverse-flatpill.png" }}');"></div>
+				<div class="c-separator-pattern__solid"></div>
+			</div>
+		</div>
+	</header>
+	<div class="portfolio-body">
+		<section class="portfolio-preamble">
+			<div class="portfolio-preamble-item">
+				<h2 class="portfolio-preamble-item-header display-3">Challenge</h2>
+				<p class="portfolio-preamble-item-body">{{ page.challenge | escape }}</p>
+			</div>
+			<div class="portfolio-preamble-item">
+				<h2 class="portfolio-preamble-item-header display-3">Solution</h2>
+				<p class="portfolio-preamble-item-body">{{ page.solution | escape }}</p>
+			</div>
+			<div class="portfolio-preamble-item">
+				<h2 class="portfolio-preamble-item-header display-3">Result</h2>
+				<p class="portfolio-preamble-item-body">{{ page.result | escape }}</p>
+			</div>
+		</section>
+		<div class="portfolio-content">
+			{% for module in page.modules %}
+				{% include {{ module.type | append: '.html' }} data=module.data %}
+			{% endfor %}
+		</div>
+	</div>
+</article>
+
+{% include page-cta.html %}
