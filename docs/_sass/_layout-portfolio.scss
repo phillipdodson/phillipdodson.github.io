@@ -28,8 +28,8 @@
 	height: var(--border-height);
 	left: 0;
 	position: absolute;
+	margin-top: calc(var(--border-height) * -1);
 	right: 0;
-	transform: translateY(-100%);
 }
 
 .portfolio-feed-header h1 {
@@ -151,8 +151,17 @@
 }
 
 @media screen and (max-width: 767px) {
+	.portfolio-meta-wrap {
+		padding-right: var(--wp--custom--semantic--spacing--fluid-viewport-px--55);
+	}
+
 	.portfolio-featured-image {
-		margin-top: var(--wp--custom--semantic--spacing--fluid-viewport-px--55);
+		margin-top: var(--wp--custom--semantic--spacing--fluid-viewport-px--40);
+	}
+
+	.portfolio-featured-image-spacer {
+		aspect-ratio: auto;
+		height: 200px;
 	}
 }
 
