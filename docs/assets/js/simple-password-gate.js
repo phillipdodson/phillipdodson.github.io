@@ -14,6 +14,14 @@
 	const STORAGE_KEY = 'siteUnlocked';
 	const LOCK_CLASS  = 'simple-password-gate';
 
+	// Auto log in if password matches in query string
+	const urlPass = new URLSearchParams(window.location.search).get('p');
+	if (urlPass && PASSWORD === urlPass) {
+		sessionStorage.setItem(STORAGE_KEY, "true");
+	} else if (urlPass) {
+		sessionStorage.removeItem(STORAGE_KEY);
+	}
+
 	// If already unlocked, reveal content immediately.
 	if (sessionStorage.getItem(STORAGE_KEY) === 'true') {
 		document.documentElement.classList.remove(LOCK_CLASS);
