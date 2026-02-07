@@ -2,17 +2,20 @@
  * This is a super-simple password-gating script
  * designed to keep my portfolio barely-private.
  * 
- * GravCMS didn't (at this time) have a basic password-protection
- * plugin that was lightweight enough to do what I needed,
- * so I rolled my own.
- * 
- * This is not sensitive information, so it doesn't bother me 
- * if a dev reverse engineers this. Go nuts and have fun.
+ * Go nuts and have fun.
  */
 (function () {
 	const PASSWORD    = 'letmein';
 	const STORAGE_KEY = 'siteUnlocked';
 	const LOCK_CLASS  = 'simple-password-gate';
+
+	// Auto log in if password matches in query string
+	const urlPass = new URLSearchParams(window.location.search).get('p');
+	if (urlPass && PASSWORD === urlPass) {
+		sessionStorage.setItem(STORAGE_KEY, "true");
+	} else if (urlPass) {
+		sessionStorage.removeItem(STORAGE_KEY);
+	}
 
 	// If already unlocked, reveal content immediately.
 	if (sessionStorage.getItem(STORAGE_KEY) === 'true') {
