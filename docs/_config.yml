@@ -49,6 +49,10 @@ navigation:
     - index.md
     - portfolio.md
 
+tracking:
+  google:
+    gtm_container: GTM-TDW2MSFL
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
