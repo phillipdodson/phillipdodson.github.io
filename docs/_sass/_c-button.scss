@@ -1,0 +1,101 @@
+/**
+ * Base.
+ */
+.c-button {
+	align-items: center;
+	box-sizing: border-box;
+	display: inline-flex;
+	gap: .5rem;
+	text-underline-offset: var(--wp--custom--component--button--text-underline-offset);
+	word-break: break-word;
+}
+
+.c-button__icon {
+	fill: currentColor;
+}
+
+/**
+ * Default/Primary.
+ */
+.c-button {
+	background-color: var(--wp--custom--component--button--primary-medium--color--background);
+	border-color: var(--wp--custom--component--button--primary-medium--border--color);
+	border-radius: var(--wp--custom--component--button--primary-medium--border--radius);
+	border-style: var(--wp--custom--component--button--primary-medium--border--style);
+	border-width: var(--wp--custom--component--button--primary-medium--border--width);
+	box-shadow: var(--wp--custom--component--button--primary-medium--shadow);
+	color: var(--wp--custom--component--button--primary-medium--color--text);
+	font-family: var(--wp--custom--component--button--primary-medium--typography--font-family);
+	font-size: var(--wp--custom--component--button--primary-medium--typography--font-size);
+	line-height: var(--wp--custom--component--button--primary-medium--typography--line-height);
+	min-height: var(--wp--custom--component--button--primary-medium--dimensions--min-height);
+	padding-bottom: var(--wp--custom--component--button--primary-medium--spacing--padding--bottom);
+	padding-left: var(--wp--custom--component--button--primary-medium--spacing--padding--left);
+	padding-right: var(--wp--custom--component--button--primary-medium--spacing--padding--right);
+	padding-top: var(--wp--custom--component--button--primary-medium--spacing--padding--top);
+	text-decoration: var(--wp--custom--component--button--primary-medium--typography--text-decoration);
+}
+
+.c-button:hover {
+	background-color: var(--wp--custom--component--button--primary-medium--hover--color--background);
+	border-color: var(--wp--custom--component--button--primary-medium--hover--border--color);
+	color: var(--wp--custom--component--button--primary-medium--hover--color--text);
+	text-decoration: var(--wp--custom--component--button--primary-medium--hover--typography--text-decoration);
+}
+
+.c-button:focus {
+	background-color: var(--wp--custom--component--button--primary-medium--focus--color--background);
+	border-color: var(--wp--custom--component--button--primary-medium--focus--border--color);
+	color: var(--wp--custom--component--button--primary-medium--focus--color--text);
+	text-decoration: var(--wp--custom--component--button--primary-medium--focus--typography--text-decoration);
+}
+
+.c-button:active {
+	background-color: var(--wp--custom--component--button--primary-medium--active--color--background);
+	border-color: var(--wp--custom--component--button--primary-medium--active--border--color);
+	color: var(--wp--custom--component--button--primary-medium--active--color--text);
+	text-decoration: var(--wp--custom--component--button--primary-medium--active--typography--text-decoration);
+}
+
+/**
+ * Secondary
+ */
+.c-button--secondary {
+	background-color: var(--wp--custom--component--button--secondary-medium--color--background);
+	border-color: var(--wp--custom--component--button--secondary-medium--border--color);
+	border-radius: var(--wp--custom--component--button--secondary-medium--border--radius);
+	border-style: var(--wp--custom--component--button--secondary-medium--border--style);
+	border-width: var(--wp--custom--component--button--secondary-medium--border--width);
+	box-shadow: var(--wp--custom--component--button--secondary-medium--shadow);
+	color: var(--wp--custom--component--button--secondary-medium--color--text);
+	font-family: var(--wp--custom--component--button--secondary-medium--typography--font-family);
+	font-size: var(--wp--custom--component--button--secondary-medium--typography--font-size);
+	line-height: var(--wp--custom--component--button--secondary-medium--typography--line-height);
+	min-height: var(--wp--custom--component--button--secondary-medium--dimensions--min-height);
+	padding-bottom: var(--wp--custom--component--button--secondary-medium--spacing--padding--bottom);
+	padding-left: var(--wp--custom--component--button--secondary-medium--spacing--padding--left);
+	padding-right: var(--wp--custom--component--button--secondary-medium--spacing--padding--right);
+	padding-top: var(--wp--custom--component--button--secondary-medium--spacing--padding--top);
+	text-decoration: var(--wp--custom--component--button--secondary-medium--typography--text-decoration);
+}
+
+.c-button--secondary:hover {
+	background-color: var(--wp--custom--component--button--secondary-medium--hover--color--background);
+	border-color: var(--wp--custom--component--button--secondary-medium--hover--border--color);
+	color: var(--wp--custom--component--button--secondary-medium--hover--color--text);
+	text-decoration: var(--wp--custom--component--button--secondary-medium--hover--typography--text-decoration);
+}
+
+.c-button--secondary:focus {
+	background-color: var(--wp--custom--component--button--secondary-medium--focus--color--background);
+	border-color: var(--wp--custom--component--button--secondary-medium--focus--border--color);
+	color: var(--wp--custom--component--button--secondary-medium--focus--color--text);
+	text-decoration: var(--wp--custom--component--button--secondary-medium--focus--typography--text-decoration);
+}
+
+.c-button--secondary:active {
+	background-color: var(--wp--custom--component--button--secondary-medium--active--color--background);
+	border-color: var(--wp--custom--component--button--secondary-medium--active--border--color);
+	color: var(--wp--custom--component--button--secondary-medium--active--color--text);
+	text-decoration: var(--wp--custom--component--button--secondary-medium--active--typography--text-decoration);
+}

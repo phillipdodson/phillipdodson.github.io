@@ -1,0 +1,43 @@
+.c-separator-pattern {
+	--rotate-angle: 4deg;
+	--height-under-angle: calc(100vw * sin(var(--rotate-angle)));
+	--bar-height: 54px;
+	margin-bottom: -2px;
+	position: relative;
+	width: calc(100% + var(--wp--style--root--padding-left) + var(--wp--style--root--padding-right));
+}
+
+.c-separator-pattern__bar {
+	clip-path: polygon(0 100%, 0 1px, 100% 1px, 100% 100%);
+	display: flex;
+	height: var(--bar-height);
+	margin-bottom: -1px;
+	transform-origin: bottom left;
+	transform: rotate(calc(var(--rotate-angle) * -1));
+	width: 101%;
+}
+
+.c-separator-pattern__pattern {
+	background-position: calc(100% - 1px) top;
+	background-repeat: repeat-x;
+	background-size: auto var(--bar-height);
+	min-width: calc(var(--wp--custom--semantic--spacing--fluid-viewport-px--55) + var(--wp--style--root--padding-left));
+	width: calc(50% - var(--wp--style--global--wide-size) / 2 + var(--wp--custom--semantic--spacing--fluid-viewport-px--55) + var(--wp--style--global--content-size) + var(--wp--custom--semantic--spacing--fluid-viewport-px--55));
+}
+
+.c-separator-pattern__solid {
+	background-color: #fff;
+	flex: 1;
+	margin-left: -1.5px;
+}
+
+.c-separator-pattern:after {
+	background-color: #fff;
+	bottom: 0;
+	clip-path: polygon(0 100%, 100% 0, 100% 100%);
+	content: "";
+	display: block;
+	height: var(--height-under-angle);
+	position: absolute;
+	width: 100%;
+}

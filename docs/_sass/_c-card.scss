@@ -1,0 +1,53 @@
+.c-card {
+	position: relative;
+}
+
+.c-card__header {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--custom--semantic--spacing--fluid-viewport-px--30);
+}
+
+.c-card__link {
+	display: block;
+	text-decoration: none;
+}
+
+/* Make whole card clickable. */
+.c-card__link::after {
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.c-card__link:focus,
+.c-card__link:hover {
+	text-decoration: underline;
+}
+
+.c-card__title {
+	order: 1;
+	margin: 0;
+
+	font-family: var(--wp--custom--semantic--typography--heading-4--font-family);
+	font-size: var(--wp--custom--semantic--typography--heading-4--font-size);
+	font-style: var(--wp--custom--semantic--typography--heading-4--font-style);
+	font-weight: var(--wp--custom--semantic--typography--heading-4--font-weight);
+	line-height: var(--wp--custom--semantic--typography--heading-4--line-height);
+}
+
+.c-card__image {
+	aspect-ratio: 5 / 6;
+	display: block;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+.c-card__body {
+	margin-block-start: var(--wp--custom--semantic--spacing--fluid-viewport-px--30);
+}

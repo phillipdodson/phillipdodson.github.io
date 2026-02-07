@@ -1,0 +1,8 @@
+<footer class="site-footer">
+	<nav class="footer-navigation">
+		{% assign default_paths = site.pages | map: "path" %}
+		{% assign page_paths = site.navigation.footer | default: default_paths %}
+		{% include navigation.html page_paths=page_paths %}
+	</nav>
+	<p class="site-copyright">© Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Phillip Dodson. All Rights Reserved.</p>
+</footer>
