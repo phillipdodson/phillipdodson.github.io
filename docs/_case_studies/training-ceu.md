@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: Training social workers on ethical and accessible client communication
-require_password: true
+require_password: false
 
 feed:
   label: Accessibility training

@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: Research study platform for HIV education and prevention
-require_password: true
+require_password: false
 
 feed:
   label: Online intervention platform

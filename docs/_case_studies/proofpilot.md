@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: Platform to design, launch, and participate in research studies
-require_password: true
+require_password: false
 
 feed:
   label: Clinical trial SaaS

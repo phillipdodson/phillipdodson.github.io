@@ -1,7 +1,7 @@
 ---
 layout: portfolio-single
 title: Website that showcases and unifies cancer training material
-require_password: true
+require_password: false
 
 feed:
   label: Cancer resources hub
