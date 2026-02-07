@@ -1,5 +1,6 @@
 <header class="site-header">
-	<a class="site-header__logolink" href="{{ site.url | escape }}">
+	{% assign homepage = site.pages | where: "path", 'index.md' | first %}
+	<a class="site-header__logolink" href="{{ homepage.url | absolute_url | escape }}">
 		<svg class="site-header__logo" width="113" height="153"><title>phillip dodson's icon</title><use href="{{ '/assets/images/phillipdodson-logo-v2.svg' | relative_url }}" /></svg>
 	</a>
 	
