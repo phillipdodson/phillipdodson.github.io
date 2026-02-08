@@ -1,6 +1,6 @@
-# Project Name
+# Phillip Dodson's Personal & Portfolio Website
 
-A static website built with Jekyll and hosted on GitHub Pages.
+This is the repository for `https://phillipdodson.io`, a static website built with Jekyll and hosted on GitHub Pages.
 
 ## Overview
 
