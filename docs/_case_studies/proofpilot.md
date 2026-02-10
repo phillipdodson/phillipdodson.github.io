@@ -28,7 +28,7 @@ modules:
       caption: Study design interface visualized all elements and activities of a study within study arms.
   - type: portfolio-callout
     data:
-      heading: Consistent design for various user roles
+      heading: Design system for consistency across various user roles
       content: '<p>The platform was a coherent experience for participants, proctors, and sponsors involved in clinical trials.</p> 
 
         <p>I made extensive use of wireframes to map the journey of each user role. Usability testing allowed me to identify elements and functionality that were consistent across all three roles and informed the components of a reusable library.</p>
